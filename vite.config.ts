@@ -3,16 +3,6 @@ import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tsconfigPaths()
-  ],
-  base: "/", // IMPORTANT for Render
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-  },
-  server: {
-    port: 5173,
-  }
+  plugins: [react(), tsconfigPaths()],
+  base: "/",
 });
